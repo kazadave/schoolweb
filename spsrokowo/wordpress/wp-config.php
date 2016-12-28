@@ -21,16 +21,16 @@
 
 // ** Ustawienia MySQL-a - możesz uzyskać je od administratora Twojego serwera ** //
 /** Nazwa bazy danych,  której używać ma WordPress */
-define('DB_NAME', 'spsrokowo');
+define('DB_NAME', 'srokowo_wordpress');
 
 /** Nazwa użytkownika bazy danych MySQL */
-define('DB_USER', 'root');
+define('DB_USER', 'srokowo_user');
 
 /** Hasło użytkownika bazy danych MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'HasloSpsrok123');
 
 /** Nazwa hosta serwera MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 's12.hekko.net.pl');
 
 /** Kodowanie bazy danych używane do stworzenia tabel w bazie danych. */
 define('DB_CHARSET', 'utf8');
