@@ -80,7 +80,9 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+error_reporting(E_All);
+ini_set('display_error', 1);
+define('WP_DEBUG', true);
 
 /* To wszystko, zakończ edycję w tym miejscu! Miłego blogowania! */
 
@@ -90,3 +92,4 @@ if ( !defined('ABSPATH') )
 
 /** Ustawia zmienne WordPressa i dołączane pliki. */
 require_once(ABSPATH . 'wp-settings.php');
+
