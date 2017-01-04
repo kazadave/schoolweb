@@ -38,9 +38,9 @@ define('DB_PASSWORD', 'HasloSpsrok123');
 /**
  * Nazwa hosta serwera MySQL
  */
-define("INSTALL_DIRECTORY", dirname(__DIR__) . "/");
-define("INSTALL_DIRNAME", basename(INSTALL_DIRECTORY));
-switch(strtolower(INSTALL_DIRNAME))
+define("INSTALL_DIRECTORY1", dirname(__DIR__) . "/");
+define("INSTALL_DIRNAME1", basename(INSTALL_DIRECTORY1));
+switch(strtolower(INSTALL_DIRNAME1))
 {
 	case "spsrokowo":
 		define('DB_HOST', '10.33.64.143');
