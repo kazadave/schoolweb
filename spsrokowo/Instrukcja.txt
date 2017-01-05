@@ -1,0 +1,22 @@
+W³¹czenie logów na œrodowisku produkcyjnym
+
+w pliku application/config/orionConfig.php podmieniæ
+
+
+/* LOGGING */
+define("LOG_ERRORS_TO_FILE", false);
+
+Na 
+
+
+/* LOGGING */
+define("LOG_ERRORS_TO_FILE", true);
+
+
+ORAZ
+
+define("TMOBILE_LOG_WS", false);
+
+na 
+
+define("TMOBILE_LOG_WS", true);
