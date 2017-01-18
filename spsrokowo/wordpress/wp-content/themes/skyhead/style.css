@@ -3147,3 +3147,11 @@ object {
 body .owl-height {
     height: inherit !important;
 }
+
+/*-----------------------------------------
+##Nasze Zmiany 
+------------------------------------------*/
+
+#menu-dokumenty {
+    float: left;
+}
