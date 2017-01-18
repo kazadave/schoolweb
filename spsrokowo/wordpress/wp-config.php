@@ -20,33 +20,18 @@
  */
 
 // ** Ustawienia MySQL-a - możesz uzyskać je od administratora Twojego serwera ** //
-/**
- * Nazwa bazy danych, której używać ma WordPress
- */
-define('DB_NAME', 'srokowo_wordpress');
-
-/**
- * Nazwa użytkownika bazy danych MySQL
- */
-define('DB_USER', 'srokowo_user');
-
-/**
- * Hasło użytkownika bazy danych MySQL
- */
-define('DB_PASSWORD', 'HasloSpsrok123');
-
-/**
- * Nazwa hosta serwera MySQL
- */
 define("INSTALL_DIRECTORY1", dirname(__DIR__) . "/");
 define("INSTALL_DIRNAME1", basename(INSTALL_DIRECTORY1));
 switch(strtolower(INSTALL_DIRNAME1))
 {
 	case "spsrokowo":
 		define('DB_HOST', '10.33.64.143');
+		define('DB_NAME', 'srokowo_wordpress');
+		define('DB_USER', 'srokowo_user');
+		define('DB_PASSWORD', 'HasloSpsrok123');
 		break;
 	case "spsrokowo2":
-		define('DB_HOST', 's12.hekko.net.pl');
+		include 'wp-config-prod.php';
 		break;
 }
 
