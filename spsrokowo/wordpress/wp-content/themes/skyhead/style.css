@@ -782,7 +782,7 @@ textarea {
 }
 
 .menu {
-    float: left;
+    float: right;
     -webkit-transition: padding 0.4s;
     -moz-transition: padding 0.4s;
     -ms-transition: padding 0.4s;
@@ -3146,4 +3146,13 @@ object {
 
 body .owl-height {
     height: inherit !important;
+}
+
+/*-----------------------------------------
+##Nasze Zmiany 
+------------------------------------------*/
+
+#menu-dokumenty {
+    float: left;
+>>>>>>> branch 'master' of https://github.com/gromula/schoolweb.git
 }
