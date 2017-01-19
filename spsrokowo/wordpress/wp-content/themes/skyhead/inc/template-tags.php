@@ -50,26 +50,26 @@ function skyhead_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'skyhead' ) );
 		if ( $categories_list && skyhead_categorized_blog() ) {
-			printf( '<span class="cat-links"><span class="icon meta-icon ion-ios-folder"></span>' . esc_html__( 'Posted in %1$s', 'skyhead' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links"><span class="icon meta-icon ion-ios-folder"></span>' . esc_html__( 'Kategoria %1$s', 'skyhead' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ',', 'skyhead' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links"><span class="icon meta-icon ion-ios-pricetags"></span> ' . esc_html__( 'Tagged %1$s', 'skyhead' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links"><span class="icon meta-icon ion-ios-pricetags"></span> ' . esc_html__( 'Tag %1$s', 'skyhead' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link"><span class="icon meta-icon  ion-ios-chatboxes"></span>';
-		comments_popup_link( esc_html__( 'Leave a comment', 'skyhead' ), esc_html__( '1 Comment', 'skyhead' ), esc_html__( '% Comments', 'skyhead' ) );
+		comments_popup_link( esc_html__( 'Skomentuj', 'skyhead' ), esc_html__( '1 Comment', 'skyhead' ), esc_html__( '% Komentarz', 'skyhead' ) );
 		echo '</span>';
 	}
 
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'skyhead' ),
+			esc_html__( 'Edytuj %s', 'skyhead' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link"><span class="icon meta-icon  ion-edit"></span>',
