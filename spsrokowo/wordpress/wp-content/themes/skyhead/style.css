@@ -1651,7 +1651,7 @@ body .inner-banner-img {
 }
 
 .site-content .entry-footer {
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     padding: 5px 15px;
