@@ -3147,3 +3147,12 @@ object {
 body .owl-height {
     height: inherit !important;
 }
+
+/*-----------------------------------------
+##Nasze Zmiany 
+------------------------------------------*/
+
+#menu-dokumenty {
+    float: left;
+>>>>>>> branch 'master' of https://github.com/gromula/schoolweb.git
+}
